@@ -1,5 +1,4 @@
 import re
-
 Data={
     "hi": "Hello! What can I do for you?",
     "how are you":"I'm a bot, so I don't have feelings, but thanks for asking!",
@@ -19,15 +18,10 @@ Data={
     "can you suggest a gift for my friend's birthday": "I'd be happy to help you find a gift for your friend's birthday. Can you please provide me with some more information about your friend, such as their interests and hobbies?",
     "can you have friends": " As,a chatbot,I don't have personal relationships or emotions, but I'm designed to be friendly and assistive! I'm here to help you with any questions or tasks, and I'm always happy to chat and learn more about you.",
     "default": "I'm sorry, I don't understand that. Can you please rephrase?"
-
 }
-
-
- # Function to match user input with the rules
+# Function to match user input with the rules
 def get_response(user_input):
-       
-      
-        
+
 # Check for each rule keyword in user input
 
     for keyword, response in Data.items():
@@ -35,8 +29,8 @@ def get_response(user_input):
             return response
     return Data["default"]
 # Simulate a chat loop
-
 print("Chatbot: Hello! I'm here to chat with you. Type 'bye' to end the conversation.")
+
 while True:
     user_input=input("you: ")
     if(user_input=="bye"):
